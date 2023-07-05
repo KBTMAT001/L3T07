@@ -1,4 +1,4 @@
-
+# The Shoe Inventory Management System is a user-friendly Python application designed to help store owners and managers efficiently manage their shoe inventory. With its intuitive interface and powerful features, the system allows users to easily add, update, and track various shoe products.
 
 #========The beginning of the class==========
 from tabulate import tabulate
