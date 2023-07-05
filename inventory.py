@@ -1,4 +1,4 @@
-
+# The Shoe Inventory Management System is a user-friendly Python application designed to help store owners and managers efficiently manage their shoe inventory. With its intuitive interface and powerful features, the system allows users to easily add, update, and track various shoe products.
 
 #========The beginning of the class==========
 from tabulate import tabulate
@@ -58,7 +58,7 @@ def read_shoes_data():
     '''
 
     try:                                    # Creating a try except block in case an inventory file isn't loaded
-        fo = open("inventory.txt","r")
+        fo = open("current_inventory.txt","r")
         for line in fo:
             lineOut = str(line).split(sep=",")
             if lineOut[0] =="Country":
@@ -236,7 +236,7 @@ while True:
         highest_qty()
     
     elif menu == "e":
-        fo = open("inventory.txt","w+")                             #Rewriting the text file only upon exit. All changes are held in the shoe list up until then
+        fo = open("current_inventory.txt","w+")                             #Rewriting the text file only upon exit. All changes are held in the shoe list up until then
 
         fo.write("Country,Code,Product,Cost,Quantity\n")
     
